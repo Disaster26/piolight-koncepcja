@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Projektowanie wnętrz Sochaczew - projekty i aranżacje | PIO-LIGHT Piotr Kitliński</title>
+<meta name="description" content="Projekty i aranżacje wnętrz mieszkań, domów, łazienek i lokali usługowych w Sochaczewie i powiecie sochaczewskim. Home staging. PIO-LIGHT Piotr Kitliński, tel. 577 820 612.">
+<meta name="theme-color" content="#17181b">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="img/hero-m-760.webp" imagesrcset="img/hero-m-480.webp 480w, img/hero-m-760.webp 760w" imagesizes="100vw" media="(max-width:760px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-1600.webp" imagesrcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w" imagesizes="100vw" media="(min-width:761px)" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/jost-rdzen.woff2" crossorigin>
+<style>
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:Manrope;font-weight:400 800;font-display:swap;src:url(fonts/manrope-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
+@font-face{font-family:Manrope;font-weight:400 800;font-display:swap;src:url(fonts/manrope-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--gold:#c9973f;--gold-l:#f2d98a;--gold-d:#8a5e1e;--ink:#17181b;--mut:#50535b;--g:#f1f2f4;--line:#dcdee3;--hh:64px;--w:min(calc(100vw - 32px),1680px)}
+@media (min-width:761px){:root{--hh:80px;--w:min(92vw,1680px)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Manrope,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:clamp(16px,.2vw + 15px,19px);line-height:1.65;color:var(--ink);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;font-family:Jost,Manrope,sans-serif;font-weight:600;line-height:1.08;letter-spacing:-.005em}
+h2{font-size:clamp(32px,3.2vw,62px)}
+h3{font-size:clamp(20px,1.3vw,26px);font-weight:500;line-height:1.2}
+p{margin:0}
+.wrap{width:var(--w);margin:0 auto}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;padding:10px 14px;z-index:99}.skip:focus{left:8px}
+
+/* przycisk: trzonek zarowki - prostokat z trzema kreskami po lewej */
+.btn{display:inline-flex;align-items:center;gap:14px;min-height:54px;padding:0 26px 0 20px;background:var(--gold);color:var(--ink);font-weight:700;font-size:1.02rem;text-decoration:none;border:0;border-radius:3px;cursor:pointer;transition:background .15s}
+.btn::before{content:"";width:14px;height:16px;flex:none;background:linear-gradient(currentColor 0 0) 0 0/100% 3px no-repeat,linear-gradient(currentColor 0 0) 1.5px 6.5px/11px 3px no-repeat,linear-gradient(currentColor 0 0) 3px 13px/8px 3px no-repeat}
+.btn:hover{background:#dbab52}
+.btn:focus-visible,.menu a:focus-visible,.tel-h:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+/* lampa z logo: przewod + zarowka */
+.lampa{display:block;width:30px;color:var(--gold)}
+.lampa i{display:block;width:2px;margin:0 auto;background:currentColor}
+.lampa svg{display:block;width:30px;height:42px;margin-top:-1px}
+
+/* naglowek */
+.top{position:sticky;top:0;z-index:50;height:var(--hh);background:#fff;border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s}
+.top.sc{border-bottom-color:var(--line);box-shadow:0 6px 18px rgba(20,20,24,.06)}
+.top .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0;color:var(--ink)}
+.logo svg.zn{width:30px;height:42px;flex:none}
+.logo svg.nap{height:22px;width:auto}
+@media (min-width:761px){.logo svg.zn{width:34px;height:48px}.logo svg.nap{height:26px}}
+.menu{display:flex;align-items:center;gap:clamp(16px,1.8vw,38px)}
+.menu a{text-decoration:none;font-weight:600;font-size:.98rem;position:relative;padding:6px 0}
+.menu a.on::after,.menu a:not(.btn):not(.tel):hover::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:2px;background:var(--gold)}
+.menu .tel{font-weight:800;white-space:nowrap}
+.menu .btn{min-height:46px;padding:0 20px 0 16px;font-size:.95rem}
+.ikt{display:none}.burger{display:none}
+@media (max-width:1180px){.menu .tel{display:none}}
+@media (max-width:1000px){
+  .menu{position:fixed;inset:var(--hh) 0 auto 0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px 16px 22px;border-top:1px solid var(--line);box-shadow:0 18px 30px rgba(20,20,24,.12);transform:translateY(-8px);opacity:0;visibility:hidden;transition:.2s}
+  .top.open .menu{transform:none;opacity:1;visibility:visible}
+  .menu a{padding:15px 2px;border-bottom:1px solid var(--g);font-size:1.08rem}
+  .menu a.on::after,.menu a:hover::after{display:none}
+  .menu a.on{box-shadow:inset 3px 0 0 var(--gold);padding-left:14px}
+  .menu .tel{display:block}
+  .menu .btn{margin-top:16px;justify-content:center;min-height:54px}
+  .ikt{display:inline-grid;place-items:center;width:44px;height:44px;margin-left:auto;color:var(--ink)}
+  .ikt svg{width:22px;height:22px}
+  .burger{display:inline-grid;place-items:center;width:44px;height:44px;border:0;background:var(--ink);cursor:pointer;padding:0;border-radius:3px}
+  .burger span,.burger span::before,.burger span::after{display:block;width:20px;height:2px;background:#fff;position:relative;transition:.2s}
+  .burger span::before,.burger span::after{content:"";position:absolute;left:0}
+  .burger span::before{top:-6px}.burger span::after{top:6px}
+  .top.open .burger span{background:transparent}
+  .top.open .burger span::before{top:0;transform:rotate(45deg)}
+  .top.open .burger span::after{top:0;transform:rotate(-45deg)}
+}
+
+/* pierwszy ekran */
+.hero{position:relative;display:flex;align-items:center;min-height:calc(100svh - var(--hh));background:var(--ink);color:#fff;overflow:hidden}
+.hero .foto{position:absolute;inset:0}
+.hero img{width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.hero .foto::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,19,22,.86) 0%,rgba(18,19,22,.7) 30%,rgba(18,19,22,.18) 58%,rgba(18,19,22,0) 72%)}
+.hero-in{position:relative;z-index:2;width:var(--w);margin:0 auto;min-height:calc(100svh - var(--hh));display:flex;flex-direction:column;padding:0 0 clamp(40px,6vh,80px)}
+.hero-in::after{content:"";flex:.55 1 0}
+.hero .lampa{flex:1 0 auto;display:flex;flex-direction:column;margin:0 0 clamp(16px,2.4vh,26px);width:34px;color:var(--gold-l)}
+.hero .lampa i{flex:1 0 56px}
+.hero .lampa svg{width:34px;height:48px}
+.hero h1{font-size:clamp(40px,3.5vw,96px);max-width:17ch}
+.hero .opis{font-size:clamp(17px,1.15vw,22px);line-height:1.55;max-width:44ch;margin-top:clamp(16px,2.2vh,24px);color:#e7e8eb}
+.hero .akcja{display:flex;align-items:center;flex-wrap:wrap;gap:16px 28px;margin-top:clamp(26px,3.6vh,40px)}
+.tel-h{display:inline-flex;align-items:center;gap:10px;color:#fff;font-weight:700;font-size:1.1rem;text-decoration:none;white-space:nowrap}
+.tel-h svg{width:20px;height:20px;color:var(--gold-l)}
+@media (max-height:820px) and (min-width:761px){.hero h1{font-size:clamp(38px,3.3vw,62px)}}
+@media (max-width:760px){
+  .hero{align-items:flex-end}
+  .hero img{object-position:50% 40%}
+  .hero .foto::after{background:linear-gradient(0deg,rgba(18,19,22,.95) 0%,rgba(18,19,22,.82) 34%,rgba(18,19,22,.15) 58%,rgba(18,19,22,0) 70%)}
+  .hero-in{padding:0 0 26px}
+  .hero-in::after{display:none}
+  .hero .lampa{width:30px;margin-bottom:14px}
+  .hero .lampa i{flex-basis:20px}
+  .hero .lampa svg{width:30px;height:42px}
+  .hero h1{font-size:clamp(32px,9.4vw,44px);max-width:none}
+  .hero .opis{font-size:15.5px;margin-top:12px}
+  .hero .akcja{margin-top:24px;gap:14px 20px}
+}
+@media (max-width:760px) and (max-height:680px){.hero h1{font-size:clamp(29px,8.6vw,36px)}.hero .opis{font-size:15px;line-height:1.45}}
+
+/* sekcje */
+.sek{padding:clamp(64px,8vw,130px) 0}
+.sek.szary{background:var(--g)}
+.glowa{display:flex;align-items:flex-end;justify-content:space-between;gap:24px 40px;flex-wrap:wrap;margin-bottom:clamp(28px,3vw,48px)}
+.glowa p{max-width:58ch;color:var(--mut);margin-top:14px}
+.glowa .lampa{margin:calc(-1 * clamp(64px,8vw,130px)) 0 22px}
+.glowa .lampa i{height:clamp(40px,5vw,80px)}
+.strz{display:flex;gap:8px}
+.strz button{width:52px;height:52px;border:1.5px solid var(--ink);background:#fff;color:var(--ink);cursor:pointer;display:grid;place-items:center;border-radius:3px}
+.strz button:hover:not(:disabled){background:var(--ink);color:#fff}
+.strz button:disabled{opacity:.3;cursor:default}
+.strz svg{width:20px;height:20px}
+@media (max-width:760px){.strz{display:none}}
+.tor{display:grid;grid-auto-flow:column;gap:clamp(14px,1.4vw,24px);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:6px;cursor:grab}
+.tor::-webkit-scrollbar{display:none}
+.tor.drag{cursor:grabbing;scroll-snap-type:none}
+.tor>*{scroll-snap-align:start;min-width:0}
+.tor img{-webkit-user-drag:none;user-select:none}
+
+/* uslugi */
+#tor-u{grid-auto-columns:calc((100% - 3*clamp(14px,1.4vw,24px))/4)}
+@media (min-width:1900px){#tor-u{grid-auto-columns:calc((100% - 4*clamp(14px,1.4vw,24px))/5)}}
+@media (max-width:1100px){#tor-u{grid-auto-columns:calc((100% - 2*16px)/3)}}
+@media (max-width:760px){#tor-u{grid-auto-columns:78%}}
+.us{margin:0}
+.us a{display:block;overflow:hidden;cursor:zoom-in;background:var(--g)}
+.us img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .5s}
+.us a:hover img{transform:scale(1.03)}
+.us figcaption{padding:18px 2px 0}
+.us h3{display:flex;align-items:baseline;gap:12px}
+.us h3::before{content:"";width:18px;height:2px;background:var(--gold);flex:none;transform:translateY(-5px)}
+.us p{color:var(--mut);margin-top:8px;font-size:.96rem;line-height:1.55}
+.uw-f{font-size:.84rem;color:var(--mut);margin-top:22px}
+
+/* swiatlo - mocna sekcja */
+.sw{background:var(--ink);color:#fff;overflow:hidden}
+.sw-g{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(36px,6vw,120px);align-items:center}
+.sw figure{margin:0;position:relative}
+.sw figure a{display:block;cursor:zoom-in}
+.sw figure img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%}
+.sw h2{color:#fff;max-width:16ch}
+.sw .lampa{color:var(--gold-l);margin-bottom:22px}
+.sw .lampa i{height:44px}
+.sw .wst{color:#d4d6db;margin-top:20px;max-width:54ch}
+.warstwy{list-style:none;margin:34px 0 0;padding:0}
+.warstwy li{display:grid;grid-template-columns:minmax(0,13ch) minmax(0,1fr);gap:6px 28px;padding:20px 0;border-top:1px solid rgba(255,255,255,.14)}
+.warstwy b{font-family:Jost,sans-serif;font-weight:500;font-size:1.2rem;color:var(--gold-l)}
+.warstwy span{color:#c9ccd2}
+@media (max-width:900px){.sw-g{grid-template-columns:1fr}.sw figure{order:2}.sw figure img{aspect-ratio:4/3}.warstwy li{grid-template-columns:1fr}}
+
+/* jak pracuje */
+.jak{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,6vw,120px);align-items:start}
+.jak .wst{color:var(--mut);margin-top:16px;max-width:50ch}
+.kroki{list-style:none;margin:30px 0 0;padding:0}
+.kroki li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:4px 20px;padding:20px 0;border-top:1px solid var(--line)}
+.kroki li:last-child{border-bottom:1px solid var(--line)}
+.kroki li::before{content:"";grid-row:span 2;width:20px;height:22px;margin-top:5px;background:linear-gradient(var(--gold) 0 0) 0 0/20px 4px no-repeat,linear-gradient(var(--gold) 0 0) 2px 9px/16px 4px no-repeat,linear-gradient(var(--gold) 0 0) 5px 18px/10px 4px no-repeat}
+.kroki b{font-family:Jost,sans-serif;font-weight:500;font-size:1.22rem}
+.kroki span{color:var(--mut)}
+.jak figure{margin:0;position:sticky;top:calc(var(--hh) + 30px)}
+.jak figure a{display:block;cursor:zoom-in}
+.jak figure img{width:100%;aspect-ratio:5/4;object-fit:cover}
+.jak figcaption{font-size:.88rem;color:var(--mut);margin-top:10px}
+@media (max-width:1000px){.jak{grid-template-columns:1fr}.jak figure{position:static}}
+
+/* obszar + kontakt */
+.kon{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(36px,5vw,110px);align-items:start}
+.kon .lead{color:var(--mut);margin-top:16px;max-width:48ch}
+.obszar{display:flex;flex-wrap:wrap;gap:8px 10px;margin:22px 0 0;padding:0;list-style:none}
+.obszar li{padding:6px 12px;border:1px solid var(--line);border-radius:3px;font-weight:600;font-size:.92rem}
+.dane{margin:30px 0 0;padding:0;list-style:none}
+.dane li{padding:16px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:110px minmax(0,1fr);gap:12px}
+.dane li span{color:var(--mut);font-size:.92rem}
+.dane a{font-weight:700;text-decoration:none;font-size:1.12rem}
+.dane a:hover{text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:2px}
+.mapa{margin-top:28px;aspect-ratio:16/9;background:var(--g);border:1px solid var(--line)}
+.mapa iframe{width:100%;height:100%;border:0;display:block}
+form{background:#fff;padding:clamp(22px,2.6vw,44px);border-top:4px solid var(--gold);box-shadow:0 20px 50px rgba(20,20,24,.07)}
+form h3{margin-bottom:20px}
+.pola{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.pola .cale{grid-column:1/-1}
+label{display:block;font-weight:700;font-size:.92rem;margin-bottom:6px}
+input,textarea,select{width:100%;font:inherit;font-size:16px;padding:13px 14px;border:1.5px solid #c4c7ce;background:#fff;color:var(--ink);border-radius:3px}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 3px rgba(201,151,63,.4)}
+[aria-invalid="true"]{border-color:#c0392b}
+textarea{min-height:120px;resize:vertical}
+.zg{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:.86rem;color:var(--mut);margin-top:4px}
+.zg input{width:20px;height:20px;flex:none;margin-top:2px}
+form .btn{margin-top:22px}
+.ok{margin-top:18px;padding:14px 16px;background:var(--g);font-weight:600}
+@media (max-width:1000px){.kon{grid-template-columns:1fr}}
+@media (max-width:560px){.pola{grid-template-columns:1fr}.dane li{grid-template-columns:1fr;gap:2px}}
+
+/* stopka */
+.stopka{background:#0f1012;color:#c4c6cc;padding:clamp(48px,5vw,80px) 0 24px;font-size:.95rem}
+.st-g{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:30px 40px}
+.stopka h3{color:#fff;font-size:1.05rem;margin-bottom:12px}
+.stopka ul{list-style:none;margin:0;padding:0}
+.stopka li{padding:4px 0}
+.stopka a{text-decoration:none}.stopka a:hover{color:#fff;text-decoration:underline}
+.stopka .logo{color:#fff}
+.stopka .o{margin-top:16px;max-width:36ch}
+.st-d{display:flex;justify-content:space-between;align-items:center;gap:12px 24px;flex-wrap:wrap;margin-top:44px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);font-size:.86rem;color:#9a9da5}
+@media (max-width:900px){.st-g{grid-template-columns:repeat(2,minmax(0,1fr))}.st-g>div:first-child{grid-column:1/-1}}
+
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+
+
+/* pasek na telefonie */
+.mob{display:none}
+@media (max-width:760px){
+  .mob{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:1fr 1.3fr;background:#fff;box-shadow:0 -1px 0 var(--line),0 -8px 20px rgba(0,0,0,.08);transform:translateY(110%);transition:transform .25s;padding-bottom:env(safe-area-inset-bottom)}
+  .mob a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:56px;font-weight:800;text-decoration:none;color:var(--ink)}
+  .mob a:last-child{background:var(--gold)}
+  .mob svg{width:19px;height:19px}
+  .mob.widac{transform:none}
+  .stopka{padding-bottom:80px}
+}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(12,12,14,.95);display:none;align-items:center;justify-content:center;flex-direction:column;padding:56px 12px 20px}
+.lb.otw{display:flex}
+.lb img{max-width:min(96vw,1500px);max-height:80vh;width:auto;height:auto;object-fit:contain}
+.lb p{color:#e8e9ec;margin-top:14px;text-align:center;font-size:.95rem}
+.lb button{position:absolute;background:none;border:0;color:#fff;cursor:pointer;width:52px;height:52px;display:grid;place-items:center}
+.lb button svg{width:28px;height:28px}
+.lb .x{top:6px;right:8px}.lb .p{left:6px;top:50%;transform:translateY(-50%)}.lb .n{right:6px;top:50%;transform:translateY(-50%)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#uslugi">Przejdź do treści</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="zarowka" viewBox="0 0 52 72"><g fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 49C17 41 6 35.5 6 23.5a20 20 0 0 1 40 0C46 35.5 35 41 35 49"/><path d="M12.5 26c3 2.2 6-.8 8.5-2.8 2.2-1.8 3.4-2.6 5-2.6s2.8.8 5 2.6c2.5 2 5.5 5 8.5 2.8"/><path d="M21 23.6c.6 9 1.6 17 1.6 25.4M31 23.6c-.6 9-1.6 17-1.6 25.4"/><rect x="14.5" y="51.5" width="23" height="5" rx="2.5"/><rect x="16.5" y="59" width="19" height="4.6" rx="2.3"/><rect x="20" y="66" width="12" height="4" rx="2"/></g></symbol>
+  <symbol id="napis" viewBox="0 0 236 34"><text x="0" y="30" font-family="Jost,Manrope,sans-serif" font-weight="700" font-size="36" letter-spacing="1.5" fill="currentColor">PIO-LIGHT</text></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24"><path d="M7 3h3l1.5 5-2 1.3a11 11 0 0 0 5.2 5.2l1.3-2 5 1.5v3a2 2 0 0 1-2 2A17 17 0 0 1 5 5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-l" viewBox="0 0 24 24"><path d="M15 4 7 12l8 8" fill="none" stroke="currentColor" stroke-width="2.2"/></symbol>
+  <symbol id="i-p" viewBox="0 0 24 24"><path d="m9 4 8 8-8 8" fill="none" stroke="currentColor" stroke-width="2.2"/></symbol>
+</svg>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="#start" aria-label="PIO-LIGHT Piotr Kitliński - projektowanie wnętrz, strona główna"><svg class="zn" style="color:var(--gold)" aria-hidden="true"><use href="#zarowka"/></svg><svg class="nap" viewBox="0 0 236 34" aria-hidden="true"><use href="#napis"/></svg></a>
+    <a class="ikt" href="tel:+48577820612" aria-label="Zadzwoń: 577 820 612"><svg aria-hidden="true"><use href="#i-tel"/></svg></a>
+    <button class="burger" id="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu"><span></span></button>
+    <nav class="menu" id="menu" aria-label="Menu główne">
+      <a href="#uslugi">Usługi</a>
+      <a href="#swiatlo">Światło</a>
+      <a href="#jak">Jak pracuję</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="tel" href="tel:+48577820612">577 820 612</a>
+      <a class="btn" href="#kontakt">Zapytaj o projekt</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="start" aria-labelledby="h1">
+  <div class="foto">
+    <picture>
+      <source media="(max-width:760px)" srcset="img/hero-m-480.webp 480w, img/hero-m-760.webp 760w" sizes="100vw">
+      <img src="img/hero-1600.webp" srcset="img/hero-640.webp 640w, img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w" sizes="100vw" width="1600" height="1088" alt="Jasny salon z aneksem kuchennym, lampy wiszące nad wyspą" fetchpriority="high">
+    </picture>
+  </div>
+  <div class="hero-in">
+    <span class="lampa" aria-hidden="true"><i></i><svg><use href="#zarowka"/></svg></span>
+    <h1 id="h1">Projektowanie wnętrz w&nbsp;Sochaczewie - światło od pierwszego szkicu</h1>
+    <p class="opis">Projekty i aranżacje mieszkań, domów, łazienek i lokali usługowych. Układ, materiały i oświetlenie planuję razem, zanim ruszy remont.</p>
+    <div class="akcja">
+      <a class="btn" href="#kontakt" id="heroCta">Zapytaj o projekt</a>
+      <a class="tel-h" href="tel:+48577820612"><svg aria-hidden="true"><use href="#i-tel"/></svg>577 820 612</a>
+    </div>
+  </div>
+</section>
+
+<section class="sek" id="uslugi" aria-labelledby="h-us">
+  <div class="wrap">
+    <div class="glowa">
+      <div>
+        <span class="lampa" aria-hidden="true"><i></i><svg><use href="#zarowka"/></svg></span>
+        <h2 id="h-us">Co projektuję</h2>
+        <p>Od jednego pomieszczenia po cały dom lub lokal. Dla osób prywatnych i firm, głównie w Sochaczewie i powiecie sochaczewskim.</p>
+      </div>
+      <div class="strz" data-nav="tor-u"><button type="button" data-k="-1" aria-label="Poprzednie"><svg aria-hidden="true"><use href="#i-l"/></svg></button><button type="button" data-k="1" aria-label="Następne"><svg aria-hidden="true"><use href="#i-p"/></svg></button></div>
+    </div>
+    <div class="tor" id="tor-u" data-tor data-grupa>
+      <figure class="us"><a href="img/dom-960.webp" data-lb="img/dom-960.webp"><img src="img/dom-480.webp" srcset="img/dom-480.webp 480w, img/dom-960.webp 960w" sizes="(max-width:760px) 78vw, (max-width:1100px) 31vw, 23vw" width="480" height="600" loading="lazy" alt="Salon w domu jednorodzinnym z dużymi oknami"></a><figcaption><h3>Mieszkania i domy</h3><p>Projekt całego wnętrza: układ, zabudowy, kolory, materiały i punkty światła.</p></figcaption></figure>
+      <figure class="us"><a href="img/lazienka-960.webp" data-lb="img/lazienka-960.webp"><img src="img/lazienka-480.webp" srcset="img/lazienka-480.webp 480w, img/lazienka-960.webp 960w" sizes="(max-width:760px) 78vw, (max-width:1100px) 31vw, 23vw" width="480" height="600" loading="lazy" alt="Jasna łazienka z wolnostojącą wanną"></a><figcaption><h3>Łazienki</h3><p>Rozkład płytek, armatura, zabudowy i oświetlenie lustra w jednym projekcie.</p></figcaption></figure>
+      <figure class="us"><a href="img/lokal-960.webp" data-lb="img/lokal-960.webp"><img src="img/lokal-480.webp" srcset="img/lokal-480.webp 480w, img/lokal-960.webp 960w" sizes="(max-width:760px) 78vw, (max-width:1100px) 31vw, 23vw" width="480" height="600" loading="lazy" alt="Wnętrze restauracji z lampami wiszącymi nad stołami"></a><figcaption><h3>Wnętrza komercyjne</h3><p>Lokale usługowe, gastronomia i biura - wnętrze, które pracuje na firmę.</p></figcaption></figure>
+      <figure class="us"><a href="img/aranz-960.webp" data-lb="img/aranz-960.webp"><img src="img/aranz-480.webp" srcset="img/aranz-480.webp 480w, img/aranz-960.webp 960w" sizes="(max-width:760px) 78vw, (max-width:1100px) 31vw, 23vw" width="480" height="600" loading="lazy" alt="Żółty fotel i lampa podłogowa w jasnym pokoju"></a><figcaption><h3>Aranżacja wnętrz</h3><p>Odświeżenie bez remontu: meble, dodatki, tekstylia i lampy dobrane do miejsca.</p></figcaption></figure>
+      <figure class="us"><a href="img/staging-960.webp" data-lb="img/staging-960.webp"><img src="img/staging-480.webp" srcset="img/staging-480.webp 480w, img/staging-960.webp 960w" sizes="(max-width:760px) 78vw, (max-width:1100px) 31vw, 23vw" width="480" height="600" loading="lazy" alt="Przygotowany do zdjęć salon z sofą i lustrami"></a><figcaption><h3>Home staging</h3><p>Przygotowanie mieszkania lub domu do sprzedaży i wynajmu, żeby dobrze wyglądał na zdjęciach.</p></figcaption></figure>
+    </div>
+    <p class="uw-f">Zdjęcia poglądowe - na gotowej stronie znajdą się zdjęcia Pana realizacji.</p>
+  </div>
+</section>
+
+<section class="sek sw" id="swiatlo" aria-labelledby="h-sw">
+  <div class="wrap sw-g">
+    <figure data-grupa><a href="img/lampy-1100.webp" data-lb="img/lampy-1100.webp"><img src="img/lampy-600.webp" srcset="img/lampy-600.webp 600w, img/lampy-1100.webp 1100w" sizes="(max-width:900px) 92vw, 38vw" width="600" height="750" loading="lazy" alt="Złote lampy wiszące na różnych wysokościach"></a></figure>
+    <div>
+      <span class="lampa" aria-hidden="true"><i></i><svg><use href="#zarowka"/></svg></span>
+      <h2 id="h-sw">Światło to część projektu, nie dodatek na koniec</h2>
+      <p class="wst">Najczęstszy problem w nowym wnętrzu? Lampy wybierane wtedy, gdy przewody są już w ścianach. Dlatego punkty światła rysuję razem z układem mebli - elektryk dostaje gotowy plan.</p>
+      <ul class="warstwy">
+        <li><b>Ogólne</b><span>Równe, wygodne światło w całym pomieszczeniu, bez ciemnych kątów.</span></li>
+        <li><b>Do pracy</b><span>Nad blatem, przy lustrze, przy biurku - tam, gdzie trzeba dobrze widzieć.</span></li>
+        <li><b>Nastrojowe</b><span>Kinkiety, taśmy i lampy wiszące, które budują klimat wieczorem.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sek szary" id="jak" aria-labelledby="h-jak">
+  <div class="wrap jak">
+    <div>
+      <h2 id="h-jak">Jak wygląda współpraca</h2>
+      <p class="wst">Każde wnętrze zaczyna się od rozmowy o tym, jak Pan lub Pani z niego korzysta. Potem krok po kroku, z decyzjami podejmowanymi na rysunkach, a nie na budowie.</p>
+      <ol class="kroki">
+        <li><b>Rozmowa i pomiar</b><span>Oglądam wnętrze, mierzę je i spisuję potrzeby domowników lub firmy.</span></li>
+        <li><b>Układ funkcjonalny</b><span>Kilka wariantów rozmieszczenia mebli i stref, zanim wybierzemy jeden.</span></li>
+        <li><b>Wizualizacje i materiały</b><span>Widać wnętrze przed remontem: kolory, okładziny, meble i lampy.</span></li>
+        <li><b>Rysunki dla wykonawców</b><span>Wymiary, gniazda, punkty światła i lista materiałów - ekipa wie, co robić.</span></li>
+      </ol>
+    </div>
+    <figure data-grupa><a href="img/kuchnia-960.webp" data-lb="img/kuchnia-960.webp"><img src="img/kuchnia-480.webp" srcset="img/kuchnia-480.webp 480w, img/kuchnia-960.webp 960w" sizes="(max-width:1000px) 92vw, 44vw" width="960" height="768" loading="lazy" alt="Biała kuchnia z wyspą i szklanymi lampami wiszącymi"></a><figcaption>Kuchnia z wyspą: lampy nad blatem zaplanowane razem z zabudową (zdjęcie poglądowe).</figcaption></figure>
+  </div>
+</section>
+
+<section class="sek" id="kontakt" aria-labelledby="h-kon">
+  <div class="wrap kon">
+    <div>
+      <h2 id="h-kon">Porozmawiajmy o Pana wnętrzu</h2>
+      <p class="lead">Proszę opisać w kilku zdaniach, co jest do zaprojektowania. Oddzwonię albo odpiszę z propozycją pierwszego spotkania na miejscu.</p>
+      <ul class="obszar" aria-label="Obszar działania">
+        <li>Sochaczew</li><li>Teresin</li><li>Brochów</li><li>Młodzieszyn</li><li>Iłów</li><li>Nowa Sucha</li><li>Rybno</li>
+      </ul>
+      <ul class="dane">
+        <li><span>Telefon</span><a href="tel:+48577820612">577 820 612</a></li>
+        <li><span>E-mail</span><a href="mailto:biuro@pio-light.pl">biuro@pio-light.pl</a></li>
+        <li><span>Adres</span><div>PIO-LIGHT Piotr Kitliński<br>Władysławów 12D, 96-500 Władysławów</div></li>
+      </ul>
+      <div class="mapa" id="mapa" data-src="https://maps.google.com/maps?q=W%C5%82adys%C5%82aw%C3%B3w%2012D%2C%2096-500&amp;z=13&amp;output=embed" data-t="Mapa dojazdu: Władysławów 12D"></div>
+    </div>
+    <form id="form" novalidate>
+      <h3>Zapytanie o projekt</h3>
+      <div class="pola">
+        <div><label for="f-imie">Imię i nazwisko</label><input id="f-imie" name="imie" autocomplete="name" required></div>
+        <div><label for="f-tel">Telefon</label><input id="f-tel" name="tel" type="tel" autocomplete="tel" required></div>
+        <div class="cale"><label for="f-mail">E-mail</label><input id="f-mail" name="mail" type="email" autocomplete="email"></div>
+        <div class="cale"><label for="f-co">Co projektujemy?</label><select id="f-co" name="co"><option>Mieszkanie</option><option>Dom</option><option>Łazienka</option><option>Lokal usługowy lub biuro</option><option>Aranżacja bez remontu</option><option>Home staging</option></select></div>
+        <div class="cale"><label for="f-msg">Kilka słów o wnętrzu</label><textarea id="f-msg" name="msg" placeholder="Np. mieszkanie 60 m² w Sochaczewie, remont od wiosny"></textarea></div>
+        <label class="zg cale"><input type="checkbox" required> Zgadzam się na kontakt w sprawie zapytania.</label>
+      </div>
+      <button class="btn" type="submit">Wyślij zapytanie</button>
+      <p class="ok" id="msg" hidden>Dziękuję, to podgląd strony - na gotowej stronie zapytanie trafi na biuro@pio-light.pl.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="stopka">
+  <div class="wrap">
+    <div class="st-g">
+      <div>
+        <a class="logo" href="#start" aria-label="PIO-LIGHT, początek strony"><svg class="zn" style="color:var(--gold)" aria-hidden="true"><use href="#zarowka"/></svg><svg class="nap" viewBox="0 0 236 34" aria-hidden="true"><use href="#napis"/></svg></a>
+        <p class="o">Projektowanie i aranżacja wnętrz w Sochaczewie i okolicy.</p>
+      </div>
+      <div><h3>Usługi</h3><ul><li><a href="#uslugi">Mieszkania i domy</a></li><li><a href="#uslugi">Łazienki</a></li><li><a href="#uslugi">Wnętrza komercyjne</a></li><li><a href="#uslugi">Home staging</a></li></ul></div>
+      <div><h3>Strona</h3><ul><li><a href="#swiatlo">Światło</a></li><li><a href="#jak">Jak pracuję</a></li><li><a href="#kontakt">Kontakt</a></li></ul></div>
+      <div><h3>Kontakt</h3><ul><li><a href="tel:+48577820612">577 820 612</a></li><li><a href="mailto:biuro@pio-light.pl">biuro@pio-light.pl</a></li><li>Władysławów 12D</li><li>NIP 837-171-00-88</li></ul></div>
+    </div>
+    <div class="st-d"><span>&copy; <span id="rok">2026</span> PIO-LIGHT Piotr Kitliński</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=pio-light.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+</div>
+  </div>
+</footer>
+
+<nav class="mob" id="mob" aria-label="Szybki kontakt"><a href="tel:+48577820612"><svg aria-hidden="true"><use href="#i-tel"/></svg>Zadzwoń</a><a href="#kontakt">Zapytaj o projekt</a></nav>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie">
+  <button class="x" type="button" aria-label="Zamknij"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19" stroke="currentColor" stroke-width="2.2"/></svg></button>
+  <button class="p" type="button" aria-label="Poprzednie"><svg aria-hidden="true"><use href="#i-l"/></svg></button>
+  <img alt="">
+  <button class="n" type="button" aria-label="Następne"><svg aria-hidden="true"><use href="#i-p"/></svg></button>
+  <p></p>
+</div>
+<script src="app.js" defer></script>
+</body>
+</html>
